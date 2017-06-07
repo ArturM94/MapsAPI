@@ -4,25 +4,10 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    // Доступ в интернет и его проверка, сохранение кэша карт и доступ к web-сервисам Google
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"></uses-permission>
-
-    // Для работы с определенным местоположением
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-
-    // Ограничение для устарелых версий устройств без поддержки OpenGL ES v.2
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true">
-    </uses-feature>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_mapsapi"
+        android:icoan="@mipmap/ic_mapsapi"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_mapsapi"
         android:supportsRtl="true"
@@ -31,16 +16,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
-        // Google API и версия Google Services
-        <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDYqYaNMIttOsBfFg4uCwwZS4oNGDhuwCY">
-        </meta-data>
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version">
-        </meta-data>
 
         <activity
             android:name=".MapsActivity"
@@ -51,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
