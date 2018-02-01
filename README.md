@@ -1,2 +1,2 @@
 # MapsAPI
-Created by the official Google guide.
+Created with help of the official Google manual.
